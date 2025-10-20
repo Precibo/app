@@ -5,7 +5,7 @@ class BasePage extends StatelessWidget {
   final Widget child;
 
   const BasePage({Key? key, required this.selectedIndex, required this.child})
-    : super(key: key);
+      : super(key: key);
 
   void _onNavTapped(BuildContext context, int index) {
     if (index == selectedIndex) return;
@@ -18,7 +18,7 @@ class BasePage extends StatelessWidget {
         Navigator.pushReplacementNamed(context, '/weather');
         break;
       case 2:
-        // Already on Diary page
+      // Already on Diary page
         break;
       case 3:
         Navigator.pushReplacementNamed(context, '/special');
